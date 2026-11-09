@@ -7,28 +7,28 @@
 class Umbra < Formula
   desc "Small coding agent for the terminal and for editors that speak ACP"
   homepage "https://github.com/Black-Rainbow-Labs/umbra"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.0/umbra-aarch64-apple-darwin.tar.gz"
-      sha256 "528d446c1a79d74aa232e1d93566b4912b25195e78cdbe0f359b1bb523e9bea7"
+      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.1/umbra-aarch64-apple-darwin.tar.gz"
+      sha256 "9bb935f3e478eca57e3bbc6e8918060110bc09c019bec25d91ab11cb53715baa"
     end
     on_intel do
-      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.0/umbra-x86_64-apple-darwin.tar.gz"
-      sha256 "aa4a6bbde1b3ece084a9cdcd7ce6a17a90d4f69e4ca6f0df07f2f84e70b957a1"
+      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.1/umbra-x86_64-apple-darwin.tar.gz"
+      sha256 "d1dd98676825668332e0b7adcf93ff152e0b35e03f8742afb564d941b524d56f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.0/umbra-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "677015b3fda3af38d60df5cb93704d0c0b3aafc19f33c5c701cc08e0c12ce4fe"
+      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.1/umbra-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9d025e1f56df42f90023954522d4106c82cae8e078df306b288776817b16ee31"
     end
     on_intel do
-      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.0/umbra-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ace263500fe47c6692b6eaea33a906699084610c00f34317f2926f7fe63911f9"
+      url "https://github.com/Black-Rainbow-Labs/umbra/releases/download/v0.4.1/umbra-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "b5b22a3a26bfae35f233bf93aad0af6a2902a263021babca9b830cfa23b714b5"
     end
   end
 
