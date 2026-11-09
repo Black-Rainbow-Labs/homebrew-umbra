@@ -1,0 +1,23 @@
+# Installs the formula from this tap and runs its test on macOS and Linux, on every push.
+name: brew test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: brew install (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-24.04]
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Install from the tap
+        run: brew install black-rainbow-labs/umbra/umbra
+      - name: Test
+        run: |
+          brew test black-rainbow-labs/umbra/umbra
+          umbra --version
